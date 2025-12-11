@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Адвент-календарь 2026 - Год Красной Огненной Лошади</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Mountains+of+Christmas:wght@700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="https://cdn-icons-png.flaticon.com/128/3699/3699499.png">
+</head>
+<body>
+    <div class="snowflakes"></div>
+    <div class="fire-horse"></div>
+    
+    <div class="container">
+        <header>
+            <h1><i class="fas fa-horse-head" style="color: #ff4444;"></i> Адвент-календарь 2026</h1>
+            <p class="subtitle">Год Красной Огненной Лошади • Открывайте окошки, играйте и получайте награды!</p>
+            <div class="year-info">
+                <div class="horse-symbol">
+                    <i class="fas fa-horse" style="color: #ff4444; font-size: 2rem;"></i>
+                    <span>2026 - Год Красной Огненной Лошади</span>
+                </div>
+            </div>
+        </header>
+
+        <div class="countdown-container">
+            <h2><i class="fas fa-clock"></i> До Нового 2026 года осталось:</h2>
+            <div class="countdown" id="countdown">
+                <div><span id="days">00</span><small>Дней</small></div>
+                <div><span id="hours">00</span><small>Часов</small></div>
+                <div><span id="minutes">00</span><small>Минут</small></div>
+                <div><span id="seconds">00</span><small>Секунд</small></div>
+                <div><span id="milliseconds">000</span><small>МСек</small></div>
+            </div>
+            <div id="newYearMessage" class="new-year-message" style="display: none;">
+                <h2>🎉 С НОВЫМ 2026 ГОДОМ! 🎉</h2>
+                <p>Год Красной Огненной Лошади принёс вам удачу!</p>
+            </div>
+        </div>
+
+        <main>
+            <div class="calendar" id="calendar">
+                <!-- Календарь будет сгенерирован JavaScript -->
+            </div>
+
+            <div class="reward-display" id="rewardDisplay">
+                <h3><i class="fas fa-gift"></i> Ваши награды:</h3>
+                <div class="reward-list" id="rewardList">
+                    <p>Открывайте дни, чтобы собрать все награды!</p>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <p>Создано с <i class="fas fa-heart" style="color:#ff4444;"></i> для праздничного настроения! 2026 - Год Красной Огненной Лошади</p>
+            <p class="small">Иконка лошади: <a href="https://www.flaticon.com/free-icons/horse" target="_blank" style="color: #FFD700;">Flaticon</a></p>
+        </footer>
+    </div>
+
+    <!-- Модальное окно для головоломки/награды -->
+    <div class="modal" id="dayModal">
+        <div class="modal-content">
+            <span class="close-modal" id="closeModal">&times;</span>
+            <div class="modal-body" id="modalBody">
+                <!-- Контент подставляется из JS -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Видео поздравление -->
+    <div class="modal" id="videoModal" style="display: none;">
+        <div class="modal-content video-modal">
+            <span class="close-modal" id="closeVideoModal">&times;</span>
+            <div class="video-container">
+                <video id="congratsVideo" controls autoplay>
+                    <source src="https://files5-cdn.slide-life.ru/cards/d/5/1/7/0/neobychnoe-videopozdravlenie-s-nastupayuschim-2026-godom.mp4" type="video/mp4">
+                    Ваш браузер не поддерживает видео.
+                </video>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
